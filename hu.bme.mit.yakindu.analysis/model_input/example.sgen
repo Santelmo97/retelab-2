@@ -7,5 +7,13 @@ GeneratorModel for yakindu::java {
 			targetFolder = "yakindu-gen"
 			libraryTargetFolder = "yakindu-gen"
 		}
+		feature GeneralFeatures{
+			InterfaceObserverSupport = false
+			//engedélyezzük egy runtime service generálását, ami
+			//elsüti az állapotgép futási ciklusát amennyiben az állapotgép ciklus alapú
+			RuntimeService = true
+			//engedélyezzük egy timer service generálását
+			TimerService = true
+		}
 	}
 }
